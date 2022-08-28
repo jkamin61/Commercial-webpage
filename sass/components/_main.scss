@@ -5,6 +5,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url(/images/main-bg/main-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 480px;
+}
+
+/*
+.main {
+    width: auto;
+    background: var(--second-bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-image: url(../images/image16.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,3 +60,4 @@
         color: var(--select-color);
     }
 }
+*/
