@@ -1,0 +1,121 @@
+.portfolio {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--normal-text);
+    letter-spacing: 0.03em;
+}
+
+.portfolio__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio__btn-strap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding-bottom: 34px;
+}
+
+.portfolio__btn {
+    background: var(--normal-bgcolor);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px;
+    border: var(--border);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background: var(--select-bgcolor);
+        color: var(--select-color);
+    }
+
+    &:focus {
+        background: var(--select-bgcolor);
+        color: var(--select-color);
+    }
+}
+
+.portfolio__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+    gap: 30px;
+}
+
+.portfolio__figure {
+    position: relative;
+    transition-duration: 250ms;
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        box-shadow: 0px 0px 25px -14px rgba(66, 68, 90, 1);
+    }
+}
+
+.portfolio__tabs .portfolio__figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__overlay {
+    background: var(--select-bgcolor);
+    position: absolute;
+    padding: 49px 45px 49px 24px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-bottom: 110px;
+    width: 370px;
+    height: 298px;
+    transform: translatey(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__figure:hover .portfolio__overlay {
+    transform: translatey(0);
+}
+
+.portfolio__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.portfolio__caption {
+    position: relative;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding-top: 0px;
+    padding-left: 24px;
+    background-color: #fff;
+}
+
+.portfolio__name {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    color: var(--normal-text);
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+.portfolio__description {
+    font-size: 16px;
+    padding-bottom: 50px;
+    letter-spacing: 0.03em;
+    color: var(--contact-us-color);
+}

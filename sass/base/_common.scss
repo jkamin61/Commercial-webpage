@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: var(--normal-text);
+    font-size: 14px;
+
+    & a:hover {
+        color: var(--select-bgcolor);
+        cursor: pointer;
+    }
+}

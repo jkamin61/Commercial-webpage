@@ -1,0 +1,211 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__label > textarea {
+        width: 448px;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        margin-top: 4px;
+        padding-left: 16px;
+        padding-top: 12px;
+        outline-color: #2196f3;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: var(--content-color);
+        padding-top: 50px;
+    }
+
+    &__strap > svg {
+        position: absolute;
+    }
+
+    &__image {
+        left: 15px;
+        top: 14px;
+    }
+
+    &__space {
+        display: flex;
+        padding-bottom: 4px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: var(--content-color);
+        padding-top: 50px;
+    }
+
+    .form__terms {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+}
+
+#form__header {
+    width: 448px;
+    height: 23px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.form__strap {
+    position: relative;
+
+    &:focus-within {
+        border-color: var(--select-bgcolor);
+        fill: var(--select-bgcolor);
+    }
+}
+
+.form__input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 30px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus-within {
+        border-color: var(--select-bgcolor);
+        fill: var(--select-bgcolor);
+    }
+}
+
+.form__comment {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+        border-color: var(--first-logo-color);
+    }
+}
+
+.form__checkbox {
+    position: relative;
+    appearance: none;
+    opacity: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:checked + svg {
+        background: #2196f3;
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        top: 21px;
+        visibility: visible;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.form__checkbox:checked + .form__checkbox-text::before {
+    background-color: #2196f3;
+}
+
+input.form__checkbox + svg {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    visibility: hidden;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__checkbox-checked {
+    position: absolute;
+}
+
+.form__checkbox-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::before {
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 2px solid #000000;
+        border-radius: 2px;
+        margin-right: 7px;
+    }
+}
+
+.form__link {
+    color: #2196f3;
+    text-decoration: underline;
+}
+
+.form__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+.form__btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+}

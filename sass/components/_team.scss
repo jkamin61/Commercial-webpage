@@ -1,0 +1,101 @@
+.team {
+    background: var(--our-workers-bgcolor);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team__header {
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 50px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--normal-text);
+}
+
+.team__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team__figure {
+    background-color: #ffffff;
+}
+
+.team__caption {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.team__name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--normal-text);
+}
+
+.team__status {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--content-color);
+}
+
+.team__icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+}
+
+.team__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--normal-bgcolor);
+    border-radius: 50%;
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: var(--select-bgcolor);
+    }
+
+    &:hover svg {
+        fill: white;
+        cursor: pointer;
+        background-color: var(--select-bgcolor);
+    }
+
+    &:focus svg {
+        background-color: var(--select-bgcolor);
+        fill: white;
+    }
+}
+
+.team__media {
+    display: inline-flex;
+    margin-left: 12px;
+    margin-right: 12px;
+    align-items: center;
+    fill: var(--content-color);
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__media--hover:hover {
+    fill: white;
+}

@@ -1,0 +1,216 @@
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    background: var(--second-bgcolor);
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 215px;
+        padding-bottom: 30px;
+    }
+
+    &__logo {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        text-decoration: none;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        transition: 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__text--color2 {
+        color: var(--select-color);
+    }
+
+    &__contact {
+        font-family: "Roboto";
+        line-height: 1.5;
+        transition: 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__section {
+        padding-top: 60px;
+        padding-left: 171px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__section-text {
+        margin-top: 10px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+
+    &__icon {
+        display: inline-flex;
+        margin-left: 12px;
+        margin-right: 12px;
+        align-items: center;
+        fill: var(--content-color);
+        transition: 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon--fill {
+        fill: white;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 12px;
+        margin-left: 78px;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    &__label-text {
+        display: flex;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-bottom: 20px;
+    }
+
+    &__input {
+        box-sizing: border-box;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--second-bgcolor);
+        padding-left: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__btn {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        background: #2196f3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        border: none;
+        text-align: center;
+        gap: 24px;
+        padding-left: 42px;
+    }
+}
+
+.footer__text--color1 {
+    color: var(--select-bgcolor);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--select-bgcolor);
+        cursor: pointer;
+    }
+
+    &:focus {
+        color: var(--select-bgcolor);
+    }
+}
+
+.footer__address {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: var(--select-color);
+    padding-bottom: 9px;
+
+    &:focus {
+        color: var(--select-bgcolor);
+    }
+
+    &:hover {
+        color: var(--select-bgcolor);
+        cursor: pointer;
+    }
+}
+
+.footer__contact-details {
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 9px;
+
+    &:hover {
+        color: var(--select-bgcolor);
+        cursor: pointer;
+    }
+
+    &:focus {
+        color: var(--select-bgcolor);
+    }
+}
+
+.footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--normal-bgcolor);
+    border-radius: 50%;
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: var(--select-bgcolor);
+    }
+
+    &:hover svg {
+        fill: white;
+        cursor: pointer;
+        background-color: var(--select-bgcolor);
+    }
+
+    &:focus svg {
+        background-color: var(--select-bgcolor);
+        fill: white;
+    }
+}

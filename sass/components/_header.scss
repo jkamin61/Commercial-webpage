@@ -1,0 +1,132 @@
+.header {
+    height: 82px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ececec;
+
+    & a:focus {
+        color: var(--select-bgcolor);
+    }
+}
+
+.header__box {
+    background: #ffffff;
+    display: inline-flex;
+    height: 80px;
+    gap: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.header__logo {
+    align-self: center;
+    margin-left: 215px;
+}
+
+.header__text {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__text--color1 {
+    color: var(--select-bgcolor);
+    text-decoration: none;
+}
+
+.header__text--color2 {
+    color: var(--second-logo-color);
+}
+
+.header__navi {
+    padding-left: 93px;
+}
+
+.header__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--normal-text);
+    text-decoration: none;
+    align-self: center;
+    margin: 15px;
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__link--after {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 43px;
+        background: var(--first-logo-color);
+        height: 4px;
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+
+.header__contact {
+    display: flex;
+    padding-left: 371px;
+}
+
+.header__contact-object {
+    display: flex;
+    align-items: center;
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover svg {
+        fill: var(--select-bgcolor);
+        cursor: pointer;
+    }
+
+    &:focus svg {
+        fill: var(--select-bgcolor);
+        cursor: pointer;
+    }
+}
+
+.header__icon {
+    display: inline-flex;
+    margin-left: 12px;
+    margin-right: 12px;
+    align-items: center;
+    fill: var(--content-color);
+    transition: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__email {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--contact-us-color);
+    text-decoration: none;
+    align-self: center;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.header__phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--contact-us-color);
+    text-decoration: none;
+    align-self: center;
+    margin-right: 30px;
+    margin-left: 10px;
+}
