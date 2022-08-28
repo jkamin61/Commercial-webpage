@@ -7,59 +7,96 @@
     & a:focus {
         color: var(--select-bgcolor);
     }
-}
 
-.header__box {
-    background: #ffffff;
-    display: inline-flex;
-    height: 80px;
-    gap: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-}
+    .header__box {
+        background: #ffffff;
+        display: inline-flex;
+        height: 80px;
+        gap: 50px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
 
-.header__logo {
-    align-self: center;
-    margin-left: 215px;
-}
+    &__logo {
+        align-self: center;
+        margin-left: 215px;
+    }
 
-.header__text {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    text-decoration: none;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    transition: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__text {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        text-decoration: none;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        transition: 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.header__text--color1 {
-    color: var(--select-bgcolor);
-    text-decoration: none;
-}
+    &__text--color1 {
+        color: var(--select-bgcolor);
+        text-decoration: none;
+    }
 
-.header__text--color2 {
-    color: var(--second-logo-color);
-}
+    &__text--color2 {
+        color: var(--second-logo-color);
+    }
 
-.header__navi {
-    padding-left: 93px;
-}
+    &__navi {
+        padding-left: 93px;
+    }
 
-.header__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--normal-text);
-    text-decoration: none;
-    align-self: center;
-    margin: 15px;
-    transition: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--normal-text);
+        text-decoration: none;
+        align-self: center;
+        margin: 15px;
+        transition: 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__contact {
+        display: flex;
+        padding-left: 371px;
+    }
+
+    &__icon {
+        display: inline-flex;
+        margin-left: 12px;
+        margin-right: 12px;
+        align-items: center;
+        fill: var(--content-color);
+        transition: 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__email {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--contact-us-color);
+        text-decoration: none;
+        align-self: center;
+        margin-right: 30px;
+        margin-left: 10px;
+    }
+
+    &__phone {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--contact-us-color);
+        text-decoration: none;
+        align-self: center;
+        margin-right: 30px;
+        margin-left: 10px;
+    }
 }
 
 .header__link--after {
@@ -77,11 +114,6 @@
     }
 }
 
-.header__contact {
-    display: flex;
-    padding-left: 371px;
-}
-
 .header__contact-object {
     display: flex;
     align-items: center;
@@ -97,36 +129,4 @@
         fill: var(--select-bgcolor);
         cursor: pointer;
     }
-}
-
-.header__icon {
-    display: inline-flex;
-    margin-left: 12px;
-    margin-right: 12px;
-    align-items: center;
-    fill: var(--content-color);
-    transition: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__email {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--contact-us-color);
-    text-decoration: none;
-    align-self: center;
-    margin-right: 30px;
-    margin-left: 10px;
-}
-
-.header__phone {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--contact-us-color);
-    text-decoration: none;
-    align-self: center;
-    margin-right: 30px;
-    margin-left: 10px;
 }
