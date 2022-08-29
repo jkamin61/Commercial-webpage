@@ -5,11 +5,89 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/images/main-bg/main-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    max-width: 480px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .main {
+        max-width: 480px;
+        height: 400px;
+        background-image: url(/images/main-bg/main-bg-mobile.jpg);
+
+        &__text {
+            display: block;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #ffffff;
+            color: var(--select-color);
+        }
+        &__btn {
+            display: block;
+            width: 200px;
+            background: var(--select-bgcolor);
+            cursor: pointer;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            margin-top: 30px;
+            transition: 250ms;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__btn-text {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--select-color);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 768px;
+        background-image: url(/images/main-bg/main-bg-tablet.jpg);
+        &__text {
+            display: block;
+            font-weight: 900;
+            font-size: 44px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--select-color);
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-bottom: 30px;
+            padding-top: 250px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        max-width: 1200px;
+        background-image: url(/images/image16.jpg);
+        &__text {
+            display: block;
+            font-weight: 900;
+            font-size: 44px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--select-color);
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-bottom: 30px;
+            padding-top: 250px;
+        }
+    }
 }
 
 /*
