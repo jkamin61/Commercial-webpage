@@ -11,6 +11,7 @@
         &__tabs {
             display: flex;
             flex-direction: column;
+            gap: 30px;
         }
     }
 }
@@ -40,7 +41,7 @@
         padding-bottom: 94px;
         gap: 30px;
     }*/
-    . &__overlay {
+    &__overlay {
         background: var(--select-bgcolor);
         position: absolute;
         padding: 49px 45px 49px 24px;
