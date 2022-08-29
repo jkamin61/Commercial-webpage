@@ -1,3 +1,27 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .clients {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__header {
+            font-weight: 700;
+            font-size: 28px;
+            padding-bottom: 50px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--normal-text);
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-center;
+            padding-left: 15px;
+            padding-right: 15px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
