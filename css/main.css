@@ -1378,6 +1378,20 @@ input.form__checkbox + svg {
   cursor: pointer;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio__btn-strap {
+    display: flex;
+    flex-direction: row;
+    max-width: 480px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+  .portfolio__tabs {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .portfolio {
   font-size: 16px;
   font-weight: normal;
@@ -1391,7 +1405,7 @@ input.form__checkbox + svg {
 .portfolio__btn-strap {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   gap: 9px;
   padding-bottom: 34px;
 }
