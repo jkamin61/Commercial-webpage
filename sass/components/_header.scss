@@ -330,6 +330,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .header__block {
+        display: none;
+    }
+
     .nav {
         display: none;
     }
@@ -358,8 +362,13 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     header {
-        margin-bottom: 60px;
+        margin-bottom: 0px;
     }
+
+    .header__menu {
+        width: 100%;
+    }
+
     .menu_btn {
         display: none;
     }
@@ -369,6 +378,12 @@
 
     .header__text {
         padding-right: 83px;
+    }
+
+    .stack__image {
+        display: flex;
+        width: 354px;
+        height: 120px;
     }
 
     .mobile-menu {

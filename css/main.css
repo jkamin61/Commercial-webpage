@@ -381,6 +381,9 @@ main {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .header__block {
+    display: none;
+  }
   .nav {
     display: none;
   }
@@ -407,7 +410,10 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   header {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+  }
+  .header__menu {
+    width: 100%;
   }
   .menu_btn {
     display: none;
@@ -417,6 +423,11 @@ main {
   }
   .header__text {
     padding-right: 83px;
+  }
+  .stack__image {
+    display: flex;
+    width: 354px;
+    height: 120px;
   }
   .mobile-menu {
     gap: 60px;
@@ -528,8 +539,6 @@ main {
 }
 .stack__image {
   display: flex;
-  width: 450px;
-  height: 120px;
   background: var(--normal-bgcolor);
   justify-content: center;
   align-items: center;
@@ -566,6 +575,23 @@ main {
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .stack__image {
+    display: flex;
+    width: 450px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .stack__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+}
 .perks {
   background-color: white;
   padding-top: 94px;

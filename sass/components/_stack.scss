@@ -12,8 +12,6 @@
 
     &__image {
         display: flex;
-        width: 450px;
-        height: 120px;
         background: var(--normal-bgcolor);
         justify-content: center;
         align-items: center;
@@ -51,5 +49,24 @@
         display: flex;
         justify-content: center;
         padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .stack__image {
+        display: flex;
+        width: 450px;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+    .stack__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
     }
 }
