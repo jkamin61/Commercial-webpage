@@ -20,76 +20,34 @@
 
     <body>
         <header class="page-header">
-            <div class="container">
+            <div class="header__menu container">
                 <div class="header__logo">
                     <a class="header__text" href="index.html"
                         ><span class="header__text--color1">Web</span
                         ><span class="header__text--color2">Studio</span></a
                     >
-
-                    <button
-                        class="menu-toggle js-open-menu"
-                        aria-expanded="false"
-                        aria-controls="mobile-menu"
-                    >
-                        <svg
-                            width="24"
-                            height="24"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"
-                            ></path>
-                        </svg>
-                    </button>
                 </div>
+                <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                </button>
             </div>
         </header>
-        <!-- <header class="header">
-            <div class="header__box container">
-                <div class="header__logo">
-                    <a class="header__text" href="index.html"
-                        ><span class="header__text--color1">Web</span
-                        ><span class="header__text--color2">Studio</span></a
-                    >
-                </div>
-                <div class="header__navi">
-                    <a class="header__link" href="index.html"> Agencja </a>
-                    <a
-                        class="header__link header__link--after"
-                        href="portfolio.html"
-                    >
-                        Portfolio
-                    </a>
-                    <a class="header__link" href="Kontakt"> Kontakt </a>
-                </div>
-
-                <div class="header__contact">
-                    <span class="header__contact-object">
-                        <svg class="header__icon" width="16" height="12">
-                            <use href="images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        <a
-                            class="header__email"
-                            href="mailto:info@devstudio.com"
-                            >info@devstudio.com</a
-                        >
-                    </span>
-                    <span class="header__contact-object">
-                        <svg class="header__icon" width="10" height="16">
-                            <use href="images/icons.svg#icon-Vector"></use>
-                        </svg>
-                        <a class="header__phone" href="tel:+48111111111"
-                            >+48 111 111 111</a
-                        >
-                    </span>
-                </div>
-            </div>
-        </header> -->
 
         <main class="portfolio">
             <section class="portfolio__section">
@@ -113,12 +71,17 @@
 
                 <div class="portfolio__tabs container">
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_one.jpg x1,
+                            images/portfolio-img/portfolio_mobile_one@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image7.jpg"
+                            src="/images/portfolio-img/portfolio_mobile_one.jpg"
                             alt="Technocrack"
-                            width="370"
-                            height="294"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -137,12 +100,17 @@
                     </figure>
 
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_two.jpg x1,
+                            images/portfolio-img/portfolio_mobile_two@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image8.jpg"
-                            alt="Basketball-graphic"
-                            width="370"
-                            height="294"
+                            src="/images/portfolio-img/portfolio_mobile_two.jpg"
+                            alt="Basketball"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -161,12 +129,17 @@
                     </figure>
 
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_three.jpg x1,
+                            images/portfolio-img/portfolio_mobile_three@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image9.jpg"
+                            src="/images/portfolio-img/portfolio_mobile_three.jpg"
                             alt="Restaurant-logo"
-                            width="370"
-                            height="294"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -183,12 +156,17 @@
                     </figure>
 
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_four.jpg x1,
+                            images/portfolio-img/portfolio_mobile_four@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image10.jpg"
+                            src="/images/portfolio-img/portfolio_mobile_four.jpg"
                             alt="Headphones"
-                            width="370"
-                            height="294"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -205,12 +183,17 @@
                     </figure>
 
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_five.jpg x1,
+                            images/portfolio-img/portfolio_mobile_five@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image11.jpg"
+                            src="/images/portfolio-img/portfolio_mobile_five.jpg"
                             alt="Boxes"
-                            width="370"
-                            height="294"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -227,12 +210,17 @@
                     </figure>
 
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_six.jpg x1,
+                            images/portfolio-img/portfolio_mobile_six@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image12.jpg"
-                            alt="Boxes"
-                            width="370"
-                            height="294"
+                            src="/images/portfolio-img/portfolio_mobile_six.jpg"
+                            alt="Monitor"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -253,12 +241,17 @@
                     </figure>
 
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_seven.jpg x1,
+                            images/portfolio-img/portfolio_mobile_seven@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image13.jpg"
+                            src="/images/portfolio-img/portfolio_mobile_seven.jpg"
                             alt="Magazines"
-                            width="370"
-                            height="294"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -277,12 +270,17 @@
                     </figure>
 
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_eight.jpg x1,
+                            images/portfolio-img/portfolio_mobile_eight@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image14.jpg"
+                            src="/images/portfolio-img/portfolio_mobile_eight.jpg"
                             alt="Tag"
-                            width="370"
-                            height="294"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -299,12 +297,17 @@
                     </figure>
 
                     <figure class="portfolio__figure">
+                        <picture>
+                            <source srcset="
+                            images/portfolio-img/portfolio_mobile_nine.jpg x1,
+                            images/portfolio-img/portfolio_mobile_nine@2x.jpg x2" 
+                            media="(max-width: 767px)"/>
                         <img
-                            src="images/image15.jpg"
+                            src="/images/portfolio-img/portfolio_mobile_nine.jpg"
                             alt="Laptop"
-                            width="370"
-                            height="294"
+                            class="portfolio__picture"
                         />
+                        </picture>
                         <div class="portfolio__overlay">
                             <p class="portfolio__text">
                                 Technocrack jest popularną platformą
@@ -428,47 +431,36 @@
                 </form>
             </div>
         </footer>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-                <svg
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                    ></path>
-                </svg>
-            </button>
-
-            <ul class="mobile-menu">
-                <div class="navi">
+    
+    <nav class="mobile">
+                <ul class="mobile__menu">
                     <li>
-                        <a href="./index.html" class="link link-navi navi-blue"
-                            >Agencja</a
+                        <a href="/index.html" class="mobile__link"
+                            ><span class="mobile__logo">Agencja</span></a
                         >
                     </li>
                     <li>
-                        <a href="./portfolio.html" class="link link-navi"
+                        <a href="/portfolio.html" class="mobile__link"
                             >Portfolio</a
                         >
                     </li>
-                    <li><a href="" class="link link-navi">Kontakt</a></li>
-                </div>
-                <div class="contact">
-                    <li><a href="" class="link number">+48 111 111 111</a></li>
-                    <li><a href="" class="link mail">info@devstudio.com</a></li>
-                </div>
-                <div class="social">
-                    <li><a href="" class="link media">Instagram</a></li>
-                    <li><a href="" class="link media">Twitter</a></li>
-                    <li><a href="" class="link media">Facebook</a></li>
-                    <li><a href="" class="link media">LinkedIn</a></li>
-                </div>
+                    <li><a href="" class="mobile__link">Kontakt</a></li>
+                </ul>
+                <ul class="mobile__contact">
+                    <li>
+                        <a href="" class="mobile__phone">+48 111 111 111</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="mobile__email">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="mobile__social">
+                <li><a href="" class="mobile__social-link">Instagram</a></li>
+                <li><a href="" class="mobile__social-link">Twitter</a></li>
+                <li><a href="" class="mobile__social-link">Facebook</a></li>
+                <li><a href="" class="mobile__social-link">LinkedIn</a></li>
             </ul>
         </div>
 
@@ -478,7 +470,7 @@
             integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
             crossorigin="anonymous"
         ></script>
-
         <script defer src="js/mobile-menu.js"></script>
+
     </body>
 </html>

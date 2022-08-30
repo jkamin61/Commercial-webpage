@@ -1,82 +1,14 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &__logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        &__address {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        &__contact-details {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        &__section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 137px;
-        }
-        &__form {
-            display: flex;
-            flex-direction: column;
-        }
-        &__label {
-            padding-bottom: 20px;
-        }
-        &__btn {
-            width: 200px;
-            height: 50px;
-            background: #2196f3;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-            font-family: "Roboto";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            letter-spacing: 0.06em;
-            color: #ffffff;
-            border: none;
-            text-align: center;
-            gap: 24px;
-            padding-left: 42px;
-        }
-        &__btn-block {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-}
-
 .footer {
     background: var(--second-bgcolor);
+    display: flex;
+    flex-direction: column;
 
-    /*&__nav {
+    &__nav {
         display: flex;
         flex-direction: column;
-        padding-left: 215px;
-        padding-bottom: 30px;
-    }*/
+        justify-content: center;
+        align-items: center;
+    }
 
     &__logo {
         font-family: "Raleway";
@@ -101,14 +33,17 @@ footer {
     }
 
     &__section {
-        padding-top: 60px;
-        /*padding-left: 171px;*/
+        padding-top: 50px;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     &__section-text {
@@ -136,22 +71,25 @@ footer {
         fill: white;
     }
 
-    /*&__form {
+    &__form {
         display: flex;
-        flex-direction: row;
-        align-items: flex-end;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 60px;
         gap: 12px;
-        margin-left: 78px;
-    }*/
+    }
 
     &__label {
         display: flex;
         flex-direction: column;
-        /*padding-top: 70px;*/
+        padding-top: 70px;
     }
 
     &__label-text {
         display: flex;
+        align-items: center;
+        justify-content: center;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
@@ -179,7 +117,7 @@ footer {
         color: rgba(255, 255, 255, 0.6);
     }
 
-    /*&__btn {
+    &__btn {
         display: flex;
         width: 200px;
         height: 50px;
@@ -200,7 +138,7 @@ footer {
         text-align: center;
         gap: 24px;
         padding-left: 42px;
-    }*/
+    }
 }
 
 .footer__text--color1 {
@@ -236,11 +174,14 @@ footer {
 }
 
 .footer__contact-details {
+    display: flex;
     font-size: 14px;
     text-decoration: none;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding-bottom: 9px;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
         color: var(--select-bgcolor);

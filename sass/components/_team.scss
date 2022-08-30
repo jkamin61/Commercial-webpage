@@ -1,92 +1,11 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .team {
-        background: var(--our-workers-bgcolor);
-
-        &__header {
-            font-weight: 700;
-            font-size: 28px;
-            padding-top: 60px;
-            padding-bottom: 30px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: var(--normal-text);
-        }
-
-        &__item {
-            background: #f5f4fa;
-        }
-
-        &__list {
-            flex-direction: row;
-            list-style-type: none;
-        }
-
-        &__figure {
-            background-color: #f5f4fa;
-            width: 450px;
-            margin-top: 30px;
-        }
-
-        &__image {
-            padding: 0;
-        }
-
-        &__caption {
-            background: #ffffff;
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-                0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 0px 0px 4px 4px;
-            padding-bottom: 30px;
-            padding-top: 30px;
-        }
-
-        &__name {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 10px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: var(--normal-text);
-        }
-
-        &__status {
-            font-size: 16px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: var(--content-color);
-        }
-
-        &__icons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-left: 32px;
-            margin-right: 32px;
-            margin-top: 16px;
-        }
-
-        &__media {
-            display: inline-flex;
-            margin-left: 12px;
-            margin-right: 12px;
-            align-items: center;
-            fill: var(--content-color);
-            transition: 250ms;
-            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    }
-}
-
-/*
 .team {
     background: var(--our-workers-bgcolor);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &__header {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         padding-bottom: 50px;
         text-align: center;
         letter-spacing: 0.03em;
@@ -98,11 +17,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         gap: 30px;
     }
 
     &__figure {
         background-color: #ffffff;
+    }
+
+    &__picture {
+        display: block;
+        width: 450px;
+        height: 460px;
     }
 
     &__caption {
@@ -132,6 +58,8 @@
 
     &__icons {
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 10px;
         margin-left: 32px;
         margin-right: 32px;
@@ -148,7 +76,6 @@
         animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-*/
 
 .team__link {
     display: flex;
