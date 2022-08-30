@@ -13,9 +13,10 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .main {
-        max-width: 480px;
+        width: 480px;
         height: 400px;
         background-image: url(../images/main-bg/main-bg-mobile.jpg);
+        background-size: 480px 400px;
 
         &__text {
             display: block;
@@ -46,6 +47,14 @@
             font-weight: 700;
             font-size: 16px;
             color: var(--select-color);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .main {
+            background-image: url("../images/main-bg/main-bg-mobile@2x.jpg");
         }
     }
 }
