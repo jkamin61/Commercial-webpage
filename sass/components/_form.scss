@@ -13,7 +13,7 @@
     }
 
     &__label > textarea {
-        width: 448px;
+        width: 370px;
         height: 120px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -31,7 +31,7 @@
         line-height: 14px;
         letter-spacing: 0.01em;
         color: var(--content-color);
-        padding-top: 50px;
+        padding-top: 12px;
     }
 
     &__strap > svg {
@@ -90,14 +90,14 @@
 }
 
 #form__header {
-    width: 448px;
-    height: 23px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
+    width: 370px;
+    height: 60px;
     color: #212121;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .form__strap {
@@ -112,7 +112,7 @@
 .form__input {
     box-sizing: border-box;
     position: absolute;
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -171,8 +171,8 @@ input.form__checkbox + svg {
 
 .form__checkbox-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
     transition-duration: 250ms;
