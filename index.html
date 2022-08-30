@@ -27,36 +27,7 @@
                         ><span class="header__text--color2">Studio</span></a
                     >
                 </div>
-                <button
-                    class="menu-toggle js-open-menu"
-                    aria-expanded="false"
-                    aria-controls="mobile-menu"
-                >
-                    <svg
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"
-                        ></path>
-                    </svg>
-                </button>
-            </div>
-        </header>
-        <!-- <header class="header">
-            <div class="header__box container">
-                <div class="header__logo">
-                    <a class="header__text" href="index.html"
-                        ><span class="header__text--color1">Web</span
-                        ><span class="header__text--color2">Studio</span></a
-                    >
-                </div>
-                <div class="header__navi">
+                <div class="header__block">
                     <a
                         class="header__link header__link--after"
                         href="index.html"
@@ -71,9 +42,6 @@
 
                 <div class="header__contact">
                     <span class="header__contact-object">
-                        <svg class="header__icon" width="16" height="12">
-                            <use href="images/icons.svg#icon-envelope"></use>
-                        </svg>
                         <a
                             class="header__email"
                             href="mailto:info@devstudio.com"
@@ -81,16 +49,84 @@
                         >
                     </span>
                     <span class="header__contact-object">
-                        <svg class="header__icon" width="10" height="16">
-                            <use href="images/icons.svg#icon-Vector"></use>
-                        </svg>
                         <a class="header__phone" href="tel:+48111111111"
                             >+48 111 111 111</a
                         >
                     </span>
                 </div>
+                <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg
+                        class="menu_btn"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                </button>
             </div>
-        </header> -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg
+                        width="19"
+                        height="19"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M18.6667 1.88L16.7867 0L9.33334 7.45334L1.88 0L0 1.88L7.45334 9.33334L0 16.7867L1.88 18.6667L9.33334 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33334L18.6667 1.88Z"
+                            fill="#212121"
+                        />
+                    </svg>
+                </button>
+
+                <nav class="mobile">
+                    <ul class="mobile__menu">
+                        <li>
+                            <a href="/index.html" class="mobile__link"
+                                ><span class="mobile__logo">Agencja</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="/portfolio.html" class="mobile__link"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li><a href="" class="mobile__link">Kontakt</a></li>
+                    </ul>
+                    <ul class="mobile__contact">
+                        <li class="mobile__contact-item">
+                            <a href="" class="mobile__phone">+48 111 111 111</a>
+                        </li>
+
+                        <li class="mobile__contact-item">
+                            <a href="" class="mobile__email"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="mobile__social">
+                    <li>
+                        <a href="" class="mobile__social-link">Instagram</a>
+                    </li>
+                    <li><a href="" class="mobile__social-link">Twitter</a></li>
+                    <li><a href="" class="mobile__social-link">Facebook</a></li>
+                    <li><a href="" class="mobile__social-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </header>
 
         <main>
             <div class="main container">
@@ -762,53 +798,6 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-                <svg
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M18.6667 1.88L16.7867 0L9.33334 7.45334L1.88 0L0 1.88L7.45334 9.33334L0 16.7867L1.88 18.6667L9.33334 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33334L18.6667 1.88Z"
-                        fill="#212121"
-                    />
-                </svg>
-            </button>
-
-            <nav class="mobile">
-                <ul class="mobile__menu">
-                    <li>
-                        <a href="/index.html" class="mobile__link"
-                            ><span class="mobile__logo">Agencja</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="/portfolio.html" class="mobile__link"
-                            >Portfolio</a
-                        >
-                    </li>
-                    <li><a href="" class="mobile__link">Kontakt</a></li>
-                </ul>
-                <ul class="mobile__contact">
-                    <li>
-                        <a href="" class="mobile__phone">+48 111 111 111</a>
-                    </li>
-
-                    <li>
-                        <a href="" class="mobile__email">info@devstudio.com</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="mobile__social">
-                <li><a href="" class="mobile__social-link">Instagram</a></li>
-                <li><a href="" class="mobile__social-link">Twitter</a></li>
-                <li><a href="" class="mobile__social-link">Facebook</a></li>
-                <li><a href="" class="mobile__social-link">LinkedIn</a></li>
-            </ul>
         </div>
 
         <script
