@@ -238,17 +238,23 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .footer {
+        padding: 0 115px;
+    }
+
     .footer-desktop {
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
 
     .footer__nav-desktop {
         display: flex;
-        padding-left: 215px;
+
         gap: 70px;
         padding-right: 78px;
         align-items: center;
+        width: 100%;
     }
 
     .footer__form {

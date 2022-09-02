@@ -52,7 +52,7 @@
                 #2f303a66 100%,
                 #2f303a66 100%
             ),
-            url(/images/main-bg/main-bg-mobile.jpg);
+            url(../images/main-bg/main-bg-mobile.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -63,7 +63,7 @@
                     #2f303a66 100%,
                     #2f303a66 100%
                 ),
-                url(/images/main-bg/main-bg-mobile@2x.jpg);
+                url(../images/main-bg/main-bg-mobile@2x.jpg);
         }
     }
 }
@@ -76,7 +76,7 @@
                 #2f303a66 100%,
                 #2f303a66 100%
             ),
-            url(/images/main-bg/main-bg-tablet.jpg);
+            url(../images/main-bg/main-bg-tablet.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -88,7 +88,7 @@
                     #2f303a66 100%,
                     #2f303a66 100%
                 ),
-                url(/images/main-bg/main-bg-tablet@2x.jpg);
+                url(../images/main-bg/main-bg-tablet@2x.jpg);
         }
     }
 
@@ -106,7 +106,7 @@
                 #2f303a66 100%,
                 #2f303a66 100%
             ),
-            url(/images/main-bg/main-bg-desktop.jpg);
+            url(../images/main-bg/main-bg-desktop.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -118,7 +118,7 @@
                     #2f303a66 100%,
                     #2f303a66 100%
                 ),
-                url(/images/main-bg/main-bg-desktop@2x.jpg);
+                url(../images/main-bg/main-bg-desktop@2x.jpg);
         }
     }
 
@@ -129,6 +129,4 @@
         padding-top: 200px;
         padding-bottom: 130px;
     }
-
-    
 }
