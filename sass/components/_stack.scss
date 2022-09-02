@@ -69,4 +69,29 @@
         gap: 30px;
         width: 100%;
     }
+
+    .stack__header {
+        width: 270px;
+        justify-content: flex-start;
+    }
+
+    .stack__text {
+        width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .stack__list {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .stack__image {
+        width: 270px;
+        height: 120px;
+    }
+
+    .stack__header {
+        justify-content: flex-start;
+    }
 }

@@ -132,3 +132,24 @@
         max-width: 450px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .portfolio__btn-strap {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio__figure {
+        width: 354px;
+    }
+
+    .portfolio__tabs {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio__picture {
+        width: 354px;
+        height: 294px;
+    }
+}

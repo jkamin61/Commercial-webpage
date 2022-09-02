@@ -108,3 +108,30 @@
 .team__media--hover:hover {
     fill: white;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team__list {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .team__figure {
+        width: 350px;
+    }
+
+    .team__picture {
+        width: 350px;
+        height: 374px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__list {
+        flex-direction: row;
+    }
+
+    .team__picture {
+        width: 270px;
+        height: 260px;
+    }
+}
