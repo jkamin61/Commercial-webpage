@@ -153,3 +153,20 @@
         height: 294px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .portfolio__tabs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio__figure {
+        width: 370px;
+        height: 404px;
+    }
+
+    .portfolio__btn-strap {
+        align-items: center;
+        justify-content: center;
+    }
+}
