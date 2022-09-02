@@ -67,3 +67,68 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .main {
+        gap: 60px;
+        background-image: linear-gradient(
+                to right,
+                #2f303a66 100%,
+                #2f303a66 100%
+            ),
+            url(/images/main-bg/main-bg-tablet.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .main {
+            background-image: linear-gradient(
+                    to right,
+                    #2f303a66 100%,
+                    #2f303a66 100%
+                ),
+                url(/images/main-bg/main-bg-tablet@2x.jpg);
+        }
+    }
+
+    .main__text {
+        width: 365px;
+        height: 84px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        height: 600px;
+        background-image: linear-gradient(
+                to right,
+                #2f303a66 100%,
+                #2f303a66 100%
+            ),
+            url(/images/main-bg/main-bg-desktop.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .main {
+            background-image: linear-gradient(
+                    to right,
+                    #2f303a66 100%,
+                    #2f303a66 100%
+                ),
+                url(/images/main-bg/main-bg-desktop@2x.jpg);
+        }
+    }
+
+    .main__text {
+        width: 696px;
+        height: 120px;
+        font-size: 44px;
+        padding-top: 200px;
+        padding-bottom: 130px;
+    }
+
+    
+}

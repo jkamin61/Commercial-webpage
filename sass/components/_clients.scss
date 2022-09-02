@@ -42,3 +42,15 @@
         fill: var(--select-bgcolor);
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .clients__header {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients__list {
+        flex-wrap: nowrap;
+    }
+}
