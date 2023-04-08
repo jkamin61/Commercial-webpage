@@ -1,1 +1,1 @@
-[link](https://jkamin61.github.io/WEB-DESIGN_CLONE-HTML-CSS/)
+Fully responsive commercial webpage built with html, css, scss.
